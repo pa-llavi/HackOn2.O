@@ -1,0 +1,417 @@
+*{
+	margin:0px;
+	box-sizing:border-box;
+	padding:0px;
+}
+
+body{
+	background-image: url("pic4.jpg");
+	background-size: 150%;
+	background-position: 0px -400px;
+	font-family: 'Nanum Gothic';
+}
+
+
+#title{
+	height:230px;
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	color:black;
+	font-family: 'Mate SC';
+	padding-left:20px;
+
+}
+
+#title h1{
+	font-size:90px;
+	text-align: left;
+	color:white;
+	text-shadow: 2px 2px black;
+}
+#title p{
+	font-size:25px;
+	padding:10px;
+	color:white;
+	font-family: 'Nanum Gothic';
+	/*text-shadow:2px 2px black;*/
+}
+
+
+/*----------------------NAVBAR BASE ----------------------------*/
+#navbar{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Nanum Gothic';
+	position: sticky;
+	top:0px;
+	left:0px;
+}
+
+#navbar:hover{
+	border:none;
+}
+
+#navbar ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.button {
+	 border: none;
+	 border-radius:5px;
+	 padding: 7px 70px;
+	 text-align: center;
+	 text-decoration: none;
+	 font-size: 20px;
+	 transition-duration: 0.4s;
+	 cursor: pointer;
+	 margin-bottom: 0px;
+}
+
+.button:hover {
+ 	 font-size: 23px;
+	 transition-duration: 0.5s;
+	 border:none;
+}
+
+/*-------------------------------------------------------*/
+
+
+/*----------------------NAVBAR THEME 1----------------------------
+#navbar{
+	background-color:white;
+	border-bottom:2px solid hotpink;
+
+}
+.button:hover{
+	background-color: rgb(245, 78, 167);
+
+}
+/*-------------------------------------------------------*/
+
+
+
+/*----------------------NAVBAR THEME 2 ----------------------------*/
+#navbar{
+	 background-color: rgb(245, 78, 167);
+
+}
+.button{
+	 background-color: rgb(245, 78, 167);
+}
+.button:hover{
+	 background-color: white; 
+	 color:black;
+
+}
+
+/*-------------- LINKS -------------*/
+a:link {
+  color: black;
+  /*background-color: transparent;*/
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/*-------------------------------------------------------*/
+
+
+
+/*-------------------BLOCKS BASE-------------------*/
+#blocks{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:rgb(71, 54, 63);
+	width:100%;
+	/*padding:100px;*/
+
+}
+
+#blocks div{
+	padding:40px;
+	display: flex;
+	flex-direction: column;
+}
+
+#blocks div img{
+	width:200px;
+}
+
+.heading{
+	font-size:40px;
+	/*border-right: 2px solid black;*/
+	height:auto;
+	display: flex;
+	/*flex-direction: row;
+	justify-content: space-between;
+	align-items: center;*/
+	font-family: 'Mate SC';
+
+}
+
+.content{
+	display: flex;
+	flex-direction: row;
+}
+
+.block{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	width:100%;
+	padding:50px;
+	padding-left:100px;
+
+}
+
+.block .extra{
+	display: flex;
+	flex-direction: column;
+	width:70%;
+}
+
+
+
+.block img{
+	height:200px;
+}
+
+
+
+/*---------------------------------------------------------*/
+
+/*-----------------BLOCK THEME 1---------------------
+
+#blocks{
+	background-color: white;
+
+}
+.block{
+	background-color: rgba(249, 222, 250,0.65);
+	border-top-left-radius: 150px;
+	border-bottom-right-radius: 150px;
+	color:rgb(30,30,50);
+	border-bottom:2px solid white;
+
+}
+/*----------------------------------------------------*/
+
+/*-----------------BLOCK THEME 2---------------------*/
+
+#blocks{
+	background-color: none;
+}
+.block{
+	background-color:rgba(249,222,250,0.75);
+	border-top-left-radius: 150px;
+	border-bottom-right-radius: 150px;
+	border-bottom:2px solid rgba(0,0,0,0.1);
+	color:black;
+}
+
+/*----------------------------------------------------*/
+
+
+#aim{
+}
+
+
+/*----------------- FOOTER ------------------*/
+.quote {
+    background-color: rgb(245, 78, 167);
+    color: white;
+    padding: 10px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    
+}
+
+
+/******************************************** Article.html ******************************************************/
+
+/*--------- BLOCK THEME -----------*/
+.block .extra2{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+
+/*--------- RESPONSIVE -------*/
+@media (max-width: 1000px) {
+    .content{
+	   flex-direction: column;
+    }
+}
+
+/*-----------BUTTON THEME-----------------*/
+.button2 {
+    height: 200px;
+    width: 200px;
+	border: none;
+	border-radius:50%;
+	/*padding: 7px 70px;*/
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+    background-color: rgb(245, 78, 167);
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin-bottom: 0px;
+    font-family: Calibri;
+    margin:10px;
+    box-shadow: 10px 10px 5px grey;
+    font-weight:300;
+
+}
+.button2:hover {
+    background-color: rgb(242, 40, 140); 
+    font-size: 35px;
+}
+
+
+#tips {
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    font-weight: bold;
+    color:white;
+    border-radius:10px;
+}
+
+#main {
+    padding: 100px;
+}
+
+/************************************************* depressionQuiz.html ******************************************************/
+#ques-block {
+    padding: 100px;
+}
+
+#next {
+    height: auto;
+    width: auto;
+    padding: 20px 40px;
+    border-radius: 0px;
+}
+
+#start, #submit {
+    height: auto;
+    width: auto;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+#next:hover {
+    background-color: rgb(244, 62, 159); 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/***************************************************** counsellor.html ******************************************************/
+.search-bar {
+    padding: 0px;
+    align-self: center;
+}
+
+#search {
+    margin: 0px;
+    height: auto;
+    width: auto;
+    padding: 10px 40px;
+    font-size: 28px;
+    border-radius:10px;
+}
+
+/*********************************************************** stories.html ***************************************************/
+#post, #read {
+    height: 350px;
+    width: 350px;
+    font-size: 40px;
+    margin:0px 20px;
+}
+#post:hover{
+    font-size: 45px;
+}
+#read:hover{
+    font-size: 45px;
+}
+
+
+/******************************************************storysubmit.html*******************************************************/
+
+
+.labels{
+	font-size:18px;
+	padding-right: 20px;
+}
+
+.inputs{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.inputs input{
+	padding:5px;
+	width:100%;
+	border-radius: 5px;
+}
+
+.inputs textarea{
+	border-radius: 5px;
+}
+
+#storyform_button{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top:10px;
+}
+
+#storyform_button button{
+	box-shadow:2px 2px 5px black;
+
+}
+
+/*---------------------------------READ STORY-----------------------*/
+
+
+
+.storycard{
+	width:30vw;
+	min-height:300px;
+	box-shadow:5px 5px 5px grey;
+	flex-direction: column;
+	justify-content: center;
+	padding:45px;
+}
+
+.storycard:hover{
+	cursor: pointer;
+	background-color:rgba(255,222,250,0.90);
+
+}
+#storybox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
