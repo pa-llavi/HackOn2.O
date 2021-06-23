@@ -1,0 +1,80 @@
+<html>
+	<head> 
+		<title>Submit Your Story - Dear Zindagi</title>
+        <link rel="stylesheet" href="/public/styles2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Mate+SC&family=Nanum+Gothic&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+
+		<div id="title"><h1 align="center">Dear Zindagi</h1>
+            <p>For Mental Wellness</p></div>
+		
+        <!----------- Navigation Bar ----------------->
+		<div id="navbar">
+			<ul>
+                <a href="/"><li class="button"><i class="fa fa-fw fa-home" style="font-size:24px"></i>Home</li></a>
+                <a href="/articles"><li class="button"><i class="fa fa-file-text"></i> Articles</li></a>
+                <a href="/stories"><li class="button"><i class="fa fa-align-left"></i> Stories</li></a>
+                <a href="/counselor"><li class="button"><i class="fa fa-user-md" style="font-size:24px"></i> Contact Counselor</li></a>
+                <a href="/faq"><li class="button"><i class="fa fa-question-circle" aria-hidden="true" style="font-size:24px"></i>FAQs</li></a>
+            </ul>
+        </div>
+        <div style="background-color: rgba(0,0,0,0.7);">
+    <div id="storyform" class="block" style="flex-direction: column;">
+        <div class="heading" style="text-align:center">
+            SUBMIT YOUR STORY
+        </div>
+        <hr width="70%" align="center" style="color:rgb(245, 78, 167);margin-top:10px">
+        
+            <form method="post" action="/stories/submitstory_yes">
+                <table>
+                    <tr>
+                        <td class="labels">Name: </td>
+                        <td class="inputs"><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Email ID: </td>
+                        <td class="inputs"><input type="email" name="emailid"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Age: </td>
+                        <td class="inputs"><input type="text" name="age"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">City: </td>
+                        <td class="inputs"><input type="text" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Title of the Story: </td>
+                        <td class="inputs"><input type="text" name="title"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Write your Story: </td>
+                        <td class="inputs"><textarea rows="10" cols="60" name="fullstory"></textarea></td>
+                    </tr>
+                </table>
+                <div id="storyform_button"><a href="/stories"><button onclick="showmesg()" class="button">SUBMIT</button></a></div>
+
+            </form>
+    </div>
+            
+        <div class="quote">
+            <p align="center">"When you focus on good, good becomes better."</p>
+        </div>
+            
+    <div class="footer">
+      <p align="center">&copy; Copyright - Made for the HackOn 2.O Competition 2021</p>
+    </div>
+
+</body>
+<script>
+    function showmesg(){
+        alert("Story submitted succesfully!");
+    }
+    
+</script>
+</html>
+          

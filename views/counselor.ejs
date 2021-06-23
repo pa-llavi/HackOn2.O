@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Find Counselor - Dear Zindagi</title>
+        <link rel="stylesheet" href="/public/styles2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Mate+SC&family=Nanum+Gothic&display=swap" rel="stylesheet">
+        
+        <!--------------------------- JS Code for search ----------------------->
+        <script>            
+            function trigger() {
+                var ele = document.getElementById("search");
+            console.log(ele);
+            var place = ele.value.toUpperCase();
+            console.log(place);
+                if(place == "" || place == null) {
+                    alert("Enter a valid place!");
+                } else {
+                    var x = confirm("Do you want to find counselor in " + place+ "?");
+                    if(x == true) {
+                        window.open("https://google.com/maps?q=mental+health+counselor+in+"+place,"_blank");
+                    }
+                }
+                    
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        <div id="title"><h1 align="center">Dear Zindagi</h1>
+            <p>For Mental Wellness</p></div>
+		
+        <!----------- Navigation Bar ----------------->
+		<div id="navbar">
+			<ul>
+                <a href="/"><li class="button"><i class="fa fa-fw fa-home" style="font-size:24px"></i>Home</li></a>
+                <a href="/articles"><li class="button"><i class="fa fa-file-text"></i> Articles</li></a>
+                <a href="/stories"><li class="button"><i class="fa fa-align-left"></i> Stories</li></a>
+                <a href="/counselor"><li class="button"><i class="fa fa-user-md" style="font-size:24px"></i> Contact Counselor</li></a>
+                <a href="/faq"><li class="button"><i class="fa fa-question-circle" aria-hidden="true" style="font-size:24px"></i> FAQs</li></a>
+            </ul>
+        </div>
+        
+        <div style="background-color: rgba(0,0,0,0.6);">
+        <div id="ques-block" class="block">
+            <div class="extra2">
+                <div class="heading">Consult psychiatrist or counselor</div><br>
+            <div class="content2" >
+                <div>
+                    <hr>
+                    <p  id="ques" style="margin-top:15px;">
+
+                         Going to a psychiatrist does not really mean that you have some kind of mental disorder. It is really very normal to consult an expert over a situation that you are facing unusually. If you are facing sleeplessness, headache, or any other sort of unusual activity, then it is the time to consult someone who can take you out from it.<br><br>
+                        In case you are also finding some unusual things in your life or unfamiliar thoughts in your mind that need a professional’s advice then it is much better to consult him on time then to regret in the last.<br><br>
+                        Sometimes it happens with us that we are unable to understand the things that we face in our life. It is not because we don’t want to understand, but it is because there are already many things in our head that does not allow new thoughts to come in. In such kind of situation, consultation is much needed. In case you or anyone who is just close to you is facing such kind of situation, then it is better to take the advice of the best psychiatrist. There are many psychiatrists who can help you recovering from several mental disorders and diseases.<br><br>
+                        If you are looking for the psychiatrist or counselor, then enter your city name below to find psychiatrist or counselor near by you :
+                    </p><br><br>
+                </div>
+                
+            </div>
+                
+            <!------------------- Search bar ----------------->    
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" placeholder="Enter city..." required>
+                    <!---<input type="button" onclick = "trigger()" value="Search" class="button2" id="next">--->
+                    <button type="submit" onclick = "trigger()" value="Search" class="button2" id="search-counsellor"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            </div>
+        </div>
+        
+        </div>
+        
+        <div class="quote">
+            <p align="center">"You only get one life. It's actually your duty to live it as fully as possible."</p>
+        </div>
+        
+        <div class="footer">
+            <p align="center">&copy; Copyright - Made for the HackOn 2.O competition 2021</p>
+        </div>
+    </body>
+</html>

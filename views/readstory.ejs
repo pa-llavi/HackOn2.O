@@ -1,0 +1,57 @@
+<html>
+	<head> 
+		<title>Dear Zindagi</title>
+        <link rel="stylesheet" href="/public/styles2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Mate+SC&family=Nanum+Gothic&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+
+		<div id="title"><h1 align="center">Dear Zindagi</h1>
+            <p>For Mental Wellness</p></div>
+		
+        <!----------- Navigation Bar ----------------->
+		<div id="navbar">
+			<ul>
+                <a href="/"><li class="button"><i class="fa fa-fw fa-home" style="font-size:24px"></i>Home</li></a>
+                <a href="/articles"><li class="button"><i class="fa fa-file-text"></i> Articles</li></a>
+                <a href="/stories"><li class="button"><i class="fa fa-align-left"></i> Stories</li></a>
+                <a href="/counselor"><li class="button"><i class="fa fa-user-md" style="font-size:24px"></i> Contact Counselor</li></a>
+                <a href="/faq"><li class="button"><i class="fa fa-question-circle" aria-hidden="true" style="font-size:24px"></i>FAQs</li></a>
+            </ul>
+        </div>
+
+        <div class="heading" style="justify-content: center;background-color:black;color:hotpink;padding:10px;">
+            Read stories of battling mental health problems
+        </div>
+
+        <div id="storybox" style="background-color: rgb(0,0,0,0.85)">
+            <% storyposts.forEach(function(element){ %>
+            <div class="block storycard">
+                <div class="heading">
+                <%= element.title %>
+                </div>
+                <div class="content" style="text-align:center;flex-direction: column;">
+                <p style="font-weight: 600">By - <%= element.name %></p>
+                <p>(Age - <%= element.age %>, City - <%= element.city %>)</p>
+                <div style="margin:5px;text-align: center;">
+                    <%= element.fullstory %>
+                </div>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+
+         <div class="quote">
+            <p align="center">"Beautiful things happen when you distance yourself from negativity."</p>
+        </div>
+        
+        <div class="footer">
+            <p align="center">&copy; Copyright - Made for the HackOn 2.O Competition 2021</p>
+        </div>
+
+
+    </body>
+</html>
